@@ -14,9 +14,19 @@ export const HomeScreen = ({navigation}: HomeScreenProps) => {
   return (
     <View style={homeStyles.container}>
       <Text>Home Screen</Text>
-      <Pressable onPress={() => navigation.navigate('DetailScreen')}>
+      <Pressable onPress={() => navigation.navigate('WebViewScreen')}>
         <View style={homeStyles.buttonContainer}>
-          <Text>Go to Details</Text>
+          <Text>Go to WebView</Text>
+          <MaterialCommunityIcons
+            name="send"
+            color={colorPalette.black}
+            size={24}
+          />
+        </View>
+      </Pressable>
+      <Pressable onPress={() => navigation.navigate('ImagePickerScreen')}>
+        <View style={homeStyles.buttonContainer}>
+          <Text>Go to Image Picker</Text>
           <MaterialCommunityIcons
             name="send"
             color={colorPalette.black}

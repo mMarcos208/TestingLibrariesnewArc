@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-export const detailsStyles = StyleSheet.create({
+export const webViewStyles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
